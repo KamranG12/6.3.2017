@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>stars1</title>
+    </head>
+    <body>
+        <script>
+        function div(say,margintop=0){
+        var text= ' ';
+        var char= '*';
+        for(var j=0;j<say;j++){
+            margintop = j*10;
+           text += '<div style="background-color:grey;width:5px;margin-top:'+margintop+';">';
+        for (var i = 0; i < 2*say-2*j-1; i++) {
+            text+=''+char +'</br>'+'</div>';
+            document.write(text);
+            text = '';
+        }
+        }
+        }
+        div(4);
+        </script>
+    </body>
+</html>
