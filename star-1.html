@@ -6,18 +6,18 @@
         <script>
         function div(say,margintop=0){
         var text= ' ';
-        var char= '*';
         for(var j=0;j<say;j++){
-            margintop = j*10;
-           text += '<div style="background-color:grey;width:5px;margin-top:'+margintop+';">';
+            margintop = j*18.2;
+           text += '<div style="width:12px;float:left;margin-top:'+margintop+';">';
         for (var i = 0; i < 2*say-2*j-1; i++) {
-            text+=''+char +'</br>'+'</div>';
-            document.write(text);
-            text = '';
+            text+='*</br>';
+        }
+           text+='</div>';
+           document.write(text);
+           text = '';
         }
         }
-        }
-        div(4);
+        div(prompt('Eded daxil edin.'));
         </script>
     </body>
 </html>
