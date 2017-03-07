@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>sademurekkeb</title>
+    </head>
+    <body>
+        <script>
+            var n = Number(prompt('Eded daxil edin.'));
+            var bolen = 0;
+            for (var i=1;i<=n;i++){
+                if(n%i==0){
+                    bolen=bolen+1;
+                }
+            }
+            if(bolen==2){
+                document.write('sadə');
+            }else{
+                document.write('mürəkkəb');
+            }
+        </script>
+    </body>
+</html>
